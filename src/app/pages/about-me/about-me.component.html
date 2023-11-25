@@ -1,9 +1,18 @@
-<div class="introduction">
+<section class="introduction">
   <span>Olá,</span>
   <h1>Eu sou o Iuri.</h1>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae  aspernatur doloremque illum esse </p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae aspernatur doloremque illum esse </p>
   <p>magnam modi dolorem neque asperiores saepe, doloribus iusto, sint sed animi consequuntur harum voluptatem veniam inventore reprehenderit.</p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae  aspernatur doloremque illum esse </p>
-  <p>magnam modi dolorem neque asperiores saepe, doloribus iusto, sint sed animi consequuntur harum voluptatem veniam inventore reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae  aspernatur doloremque illum esse </p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae aspernatur doloremque illum esse </p>
+  <p>magnam modi dolorem neque asperiores saepe, doloribus iusto, sint sed animi consequuntur harum voluptatem veniam inventore reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae aspernatur doloremque illum esse </p>
   <p>magnam modi dolorem neque asperiores saepe, doloribus iusto, sint sed animi consequuntur harum voluptatem veniam inventore reprehenderit.</p>
+</section>
+<div class="contact">
+  <p>Me encontre em</p>
+  <div class="buttons">
+    @for (button of buttons; track $index) {
+    <a [href]="button.link" target="_blank">{{button.label}}</a>
+    }
+  </div>
+
 </div>

@@ -10,7 +10,13 @@ html,
 
 body {
   background-color: #111010;
+  line-height: 2;
   // background-color: #F5F5F5;
+}
+
+p,
+span {
+  font-size: 1rem;
 }
 
 .container {

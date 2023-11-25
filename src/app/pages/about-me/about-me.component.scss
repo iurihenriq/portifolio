@@ -1,10 +1,51 @@
 .introduction {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 1.5rem;
+}
 
-  p,
-  span {
-    font-size: 1rem;
+.contact {
+  display: flex;
+  flex-direction: column;
+
+  p {
+    margin: 6rem 0 1.5rem 0;
+  }
+
+  .buttons {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+
+    a {
+      text-align: center;
+      text-decoration: none;
+      background-color: #111010;
+      color: #878787;
+      border: 2px solid #878787;
+      padding: 1rem 2rem;
+      box-sizing: border-box;
+      transition: 0.3s;
+
+      &:hover {
+        color: #111010;
+        background-color: #878787;
+        border: 2px solid #111010;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .contact {
+    .buttons {
+      a {
+        flex: 1;
+
+        &:first-child {
+          flex-basis: 100%;
+        }
+      }
+    }
   }
 }

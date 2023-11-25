@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
-interface Link {
+interface ILink {
   route: string;
   label: string;
 }
@@ -15,7 +15,7 @@ interface Link {
   styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
-  links: Link[] = [
+  links: ILink[] = [
     {
       route: '',
       label: 'Sobre mim',
