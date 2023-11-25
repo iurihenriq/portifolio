@@ -23,8 +23,12 @@
 }
 
 @media (max-width: 1024px) {
-  .banner {
-    width: 100%;
-    height: auto;
+  .app {
+    main {
+      .banner {
+        width: 100%;
+        height: auto;
+      }
+    }
   }
 }
